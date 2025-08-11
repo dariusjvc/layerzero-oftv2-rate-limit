@@ -1,0 +1,19 @@
+{
+  "name": "layerzero-oftv2-rate-limit-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network sepolia",
+    "send": "hardhat run scripts/send.ts --network sepolia"
+  },
+  "devDependencies": {
+    "@layerzerolabs/oft-evm": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5",
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.5"
+  }
+}
