@@ -29,7 +29,7 @@ contract OFTWithRateLimit is Ownable, OFTV2 {
         override
         returns (uint256 amountDebitedLD)
     {
-        // reset diario
+        // daily reset
         if (block.timestamp > lastReset + 1 days) {
             spentToday = 0;
             lastReset = block.timestamp;
@@ -38,7 +38,6 @@ contract OFTWithRateLimit is Ownable, OFTV2 {
         require(spentToday + _amount <= dailyLimit, "Daily limit exceeded");
         spentToday += _amount;
 
-        // capturamos y devolvemos el único uint que retorna el padre
         amountDebitedLD = super._debitFrom(_from, _dstChainId, _toAddress, _amount);
     }
 
