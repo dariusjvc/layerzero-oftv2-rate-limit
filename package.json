@@ -9,11 +9,23 @@
     "send": "hardhat run scripts/send.ts --network sepolia"
   },
   "devDependencies": {
-    "@layerzerolabs/oft-evm": "^1.0.0",
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@layerzerolabs/solidity-examples": "^1.1.0",
+    "@nomicfoundation/hardhat-verify": "^1.1.1",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^20.12.5",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "chai": "^4.5.0",
     "dotenv": "^16.4.5",
+    "ethers": "^5.7.2",
     "hardhat": "^2.22.5",
-    "typescript": "^5.4.5",
-    "@types/node": "^20.12.5"
+    "hardhat-gas-reporter": "^1.0.10",
+    "solidity-coverage": "^0.8.16",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.4.5"
   }
 }
