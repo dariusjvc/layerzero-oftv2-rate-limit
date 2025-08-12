@@ -38,6 +38,7 @@ contract OFTWithRateLimit is Ownable, OFTV2 {
         require(spentToday + _amount <= dailyLimit, "Daily limit exceeded");
         spentToday += _amount;
 
+        // capture and return the only uint returned by the parent
         amountDebitedLD = super._debitFrom(_from, _dstChainId, _toAddress, _amount);
     }
 
